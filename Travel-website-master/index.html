@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script>
+        document.getElementById("book").addEventListener("click", function () {
+            window.location.href = "https://www.makemytrip.com/";
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#planner">Planner</a></li>
+                    <li><a href="#desti">Destination</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp" onclick="tt()">
+                <span class="mob " onclick="tt()"></span>
+                <span class="mob " onclick="tt()"></span>
+                <span class="mob " onclick="tt()"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bg">
+            <h1>Welcome to Yatra Sahayak</h1>
+            <p>Swagat hai Yatra Sahayak mein—manzil aapki, planning humari, aur safar hoga full-on mast aur tension-free!</p>
+
+            <button id="book" formaction="https://www.makemytrip.com/">Book Now</button>
+        </div>
+    </main>
+    <section id="planner">
+        <h1>Travel Planner</h1>
+        <p>Plan your trip by entering your destination and the number of days you'll stay.</p>
+        <div class="planner-form">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter city name">
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" placeholder="Enter days">
+            <button class="pb" onclick="planTrip()">Plan Your Trip</button>
+        </div>
+        <div id="trip-result"></div>
+    </section>
+
+    <section id="desti">
+        <h1>Pupular Destination</h1>
+        <div class="dest-con">
+
+            <div class="des">
+                <img src="images/gate.jpg" alt="">
+                <h3>Delhi</h3>
+                <p>Dilli ki baat hi kuch alag hai! Yahaan ka history, culture, aur khana sab mashhoor hai. Purani Dilli se leke India Gate tak, yeh sheher ekdum zabardast hai.</p>
+
+            </div>
+            <div class="des">
+                <img src="images/2.jpg" alt="">
+                <h3>Mumbai</h3>
+                <p>Maximum City, bhai! Bollywood, beaches, aur Bambai ka swag. Gateway of India se leke Marine Drive tak, yahaan har raat ek party hai!
+                </p>
+            </div>
+            <div class="des">
+                <img src="images/3.jpg" alt="">
+                <h3>Agra</h3>
+                <p>Taj Mahal ka sheher—pyaar ka ultimate symbol! Agra ki shaan iski history aur Mughal-era monuments hai. Ek baar yahaan aao, yaadgaar ban jaata hai.</p>
+            </div>
+            <div class="des">
+                <img src="images/9.jpg" alt="">
+                <h3>Goa</h3>
+                <p>Sun, sand, aur sukoon—Goa ki vibe alag hi level pe hai. Beaches, shacks, aur full-on masti, yahaan aake life chill mode mein chali jaati hai.</p>
+            </div>
+            <div class="des">
+                <img src="images/5.jpg" alt="">
+                <h3>Jaipur</h3>
+                <p>Pink City, boss! Hawa Mahal aur Amber Fort ke jadoo se bhara, yeh sheher history ki kahaaniyan sunata hai. Rajwade ki shaahi feel, Jaipur se badhkar kya!</p>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Yatra Sahayak mein aapka swagat hai! Bas apna destination batao, aur hum aapka poora safar plan kar denge, bilkul bindaas. Tension-free trip, best places, aur full-on masti—yeh hai aapke safar ka asli dabangg style!</p>
+        <!-- <div class="dest-con con1">
+            <div class="mem">
+                <img src="images/team-member-1.jpg" alt="">
+                <h3>John Smith</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="mem">
+                <img src="images/team-member-2.jpg" alt="">
+                <h3>Jane Doe</h3>
+                <p>Head of Operations</p>
+            </div>
+            <div class="mem">
+                <img src="images/team-member-3.jpg" alt="">
+                <h3>David Lee</h3>
+                <p>Marketing Director</p>
+            </div>
+
+        </div> -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <p>If you have any questions or would like to book a trip, please fill
+            out the form below or contact us using the information provided.</p>
+        <div class="link-con">
+            <ul>
+                <li><img src="images/pin.png" alt="">
+                    <p>Greater Noida, UP</p></a>
+                </li>
+
+                <li><img src="images/email.png" alt=""><a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shuklaindia5@gmail.com"
+                        target="_blank">shuklashivansh1234@gmail.com</a></li>
+                <li><img src="images/phone-call.png" alt=""><a href="tel:9415882329">9415882329</a></li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="d644e935-c6e7-4b85-86bc-d36f402c30da">
+                <label for="">Name</label>
+                <input type="text" name="name" required>
+                <label for="">Email</label>
+                <input type="email" name="email" required>
+                <Label>Message</Label>
+                <textarea name="message" required></textarea>
+                <button type="submit">Submit Form</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="" class="hid"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="" class="hid"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="" class="hid"></a>
+        </div>
+        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("book").addEventListener("click", function () {
+            window.location.href = "https://www.makemytrip.com/";
+        });
+    </script>
+</body>
+<script src="index.js"></script>
+
+</html>
